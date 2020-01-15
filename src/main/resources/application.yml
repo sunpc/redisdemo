@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    url: jdbc:db2://9.212.130.213:38362/LP01CDA1:currentSchema=DBFFMSXR;sslConnection=true;sslTrustStoreLocation=src/main/resources/fms.jks;
+    username: FMX001
+    password: ENC(ONaGwZ0n2W/2yKswY5mh5FWEyF28lDsE)
+    driver-class-name: com.ibm.db2.jcc.DB2Driver
+  redis:
+    host: localhost
+    port: 6379
+    password:
+    database: 1
+    pool:
+      max-active: 8
+      max-wait: -1
+      max-idle: 500
+jasypt:
+  encryptor:
+    password: dlspcsun@cn.ibm.com
