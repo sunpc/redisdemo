@@ -1,4 +1,12 @@
 spring:
+  thymeleaf:
+    prefix: classpath:/templates/
+    check-template-location: true
+    cache: false
+    suffix: .html
+    encoding: UTF-8
+    content-type: text/html
+    mode: HTML5
   datasource:
     url: jdbc:db2://9.212.130.213:38362/LP01CDA1:currentSchema=DBFFMSXR;sslConnection=true;sslTrustStoreLocation=src/main/resources/fms.jks;
     username: FMX001

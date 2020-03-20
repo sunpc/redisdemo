@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Acct Owner List</title>
+</head>
+<body>
+<h1>Acct Owner List</h1>
+<h2>Effective Date: <span th:text="${effcDate}"></span>
+    | Seller Profile IE ID: <span th:text="${spieId}"></span>
+</h2>
+<table border="1" bgcolor="#f0ffff">
+    <thead>
+    <tr>
+        <th>ACCT_OWNER_ID</th>
+        <th>ACCT_MASTER_ID</th>
+        <th>QUOTA_AMT</th>
+    </tr>
+    </thead>
+    <tbody th:each="entry : ${list}">
+    <tr>
+        <td align="right" th:text="${entry.acctOwnerId}"></td>
+        <td align="right" th:text="${entry.acctMasterId}"></td>
+        <td align="right" th:text="${entry.quotaAmt}"></td>
+    </tr>
+    </tbody>
+</table>
+<p>Page load time: <span th:text="${time}"></span> ms</p>
+</body>
+</html>
